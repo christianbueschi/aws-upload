@@ -32,6 +32,8 @@ const getSignedS3Url = async () => {
           body: file,
         });
 
+        console.log('🥳 Successfully uploaded file to S3');
+
       } catch (error) {
         throw new Error('Failed to put: ' + error);
       }
